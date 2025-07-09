@@ -7,7 +7,13 @@ export const CellStyle = styled.button`
   border: none;
   width: 10rem;
   height: 10rem;
-  border-radius: 10px;
+  border-radius: 2.5rem;
   box-shadow: 5px 10px ${(props) => props.theme.colors.cream};
   cursor: pointer;
+  padding: 1.2rem;
+
+  .icons {
+    fill: ${(props) => props.theme.colors.primary};
+  }
+
 `;
