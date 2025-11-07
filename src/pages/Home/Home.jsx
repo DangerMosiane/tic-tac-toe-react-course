@@ -10,7 +10,13 @@ const Home = () => {
     <Container columnBased>
       <Title>TicTacToe</Title>
       <Subtitle>Play with your friends, higher score wins</Subtitle>
-      <Button onClick={() => navigate("/game-on")}>Play Now</Button>
+      <Button
+        onClick={() => {
+          navigate("/game-on");
+        }}
+      >
+        Play Now
+      </Button>
     </Container>
   );
 };

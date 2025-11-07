@@ -7,6 +7,7 @@ import { ModalContext } from "../../../context/ModalContext";
 
 const RoundOverModal = () => {
   const { resetBoard, game } = useContext(GameContext);
+  const { resetGame } = useContext(GameContext);
   const { handleModal } = useContext(ModalContext);
   return (
     <>
@@ -36,7 +37,7 @@ const RoundOverModal = () => {
         >
           Continue
         </Button>
-        <Button color="#8437f9">Restart</Button>
+        <Button color="#8437f9" onClick={() => {resetGame(); handleModal() }}>Restart</Button>
       </ModalFooter>
     </>
   );

@@ -15,5 +15,14 @@ export const CellStyle = styled.button`
   .icons {
     fill: ${(props) => props.theme.colors.primary};
   }
-
+  ${(props) => props.theme.size.media.mobile} {
+    width: 6rem;
+    height: 6rem;
+    .icons {
+      fill: ${(props) => props.theme.colors.primary};
+      height: 4rem;
+      width: 4rem;
+      padding-right: 5px
+    }
+  }
 `;
